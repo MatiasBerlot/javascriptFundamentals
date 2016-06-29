@@ -1,0 +1,5 @@
+body:after {
+content: url(../img/img_logo_white.png);
+position: fixed;
+bottom: 2em;
+left: 2em; }
