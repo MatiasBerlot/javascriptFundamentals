@@ -87,11 +87,11 @@
                     <h1>Que es Javascript?</h1>
                     <pre>
                         <code class="js">
-                            var helloWorld = function (){
-                                console.log("hello world");
-                            }
+var helloWorld = function (){
+    console.log("hello world");
+}
 
-                            helloWorld();
+helloWorld();
                         </code>
                     </pre>
                     <aside class="notes">
@@ -99,7 +99,7 @@
                         - errores detectables en tiempo de ejecucion en vez de tiempo de compilacion<br/>
                         - es interpretado, es el lenguaje del web browser por eso es chico, liviano y compacto,<br/>
                         - es dinamico, es orientado a objetos y funcional,<br/>
-                        - es posiblemente el lenguaje mas usando del mundo ya que el desarrollo web crecio muchisimo los ultimos anios.<br/>
+                        - es posiblemente el lenguaje mas usado del mundo ya que el desarrollo web crecio muchisimo los ultimos años.<br/>
                         - se podria decir que no hay pc que no pueda interpretar JS ya que todas tienen web browsers.<br/>
                         - desde que AJAX se hizo mas comun y mas facil de usar las web apps empezaron a reemplazar apps desktop.<br/>
                         - cada vez mas aplicaciones corren JS en el servidor tambien.<br/>
@@ -107,8 +107,154 @@
                 </section>
                 <section>
                     <h1>Tipos</h1>
+                    <table class="multiple">
+                        <tr>
+                            <td>
+                                <h3>
+                                Boolean
+                                </h3>
+                                <pre>
+                                    <code class="js">
+var user.isPresent = true;
+                                    </code>
+                                </pre>
+                            </td>
+                            <td>
+                                <h3>
+                                Null
+                                </h3>
+                                <pre>
+                                    <code class="js">
+var user.girlfriend = null;
+                                    </code>
+                                </pre>
+                            </td>
+                            <td>
+                                <h3>
+                                Undefined
+                                </h3>
+                                <pre>
+                                    <code class="js">
+var user.superPowers;
+                                    </code>
+                                </pre>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>
+                                Number
+                                </h3>
+                                <pre>
+                                    <code class="js">
+var user.age = 21;
+                                    </code>
+                                </pre>
+                            </td>
+                            <td>
+                                <h3>
+                                String
+                                </h3>
+                                <pre>
+                                    <code class="js">
+var user.name = 'Bob';
+                                    </code>
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
                     <aside class="notes">
-                        notas
+                        - int
+                        -- 
+                        - string
+                        - array
+                        - bools
+                        - 
+                    </aside>
+                </section>
+                <section>
+                    <h3>Falsy</h3>
+                    <pre>
+                    <code class="js">
+if (false) 
+if (null) 
+if (undefined) 
+if (0) 
+if (NaN) 
+if ('') 
+if ("") 
+if (user.money)
+                        </code>
+                    </pre>
+                </section>
+                 <section>
+                    <h3>Truthy</h3>
+                    <pre>
+                    <code class="js">
+if (true)
+if ({})
+if ([])
+if (42)
+if ("foo")
+if (new Date())
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Falsy Power</h3>
+                    <pre>
+                        <code class="js">
+var isUserPresentInClass;
+if(user != undefined && user != null){
+    var isUserPresentInClass = user.isPresent;
+}
+                        </code>
+                    </pre>
+                    <h3>
+                        VS
+                    </h3>
+                    <pre>
+                        <code class="js">
+var isUserPresentInClass;
+if(user){
+    isUserPresentInClass = user.isPresent;
+} 
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h1>
+                        Undefined
+                    </h1>
+                    <pre>
+                        <code class="js">
+var a;
+
+function printText(text){
+    console.log(text);
+}
+
+function addTwo(num){
+    return
+        num + 2;
+}
+
+// x has not been declared before
+if (typeof x === 'undefined') { // evaluates to true without errors
+   // these statements execute
+}
+
+if(x === undefined){ // throws a ReferenceError
+
+}
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        Property attributes of undefined
+                        Writable	no
+                        Enumerable	no
+                        Configurable	no
                     </aside>
                 </section>
                 <section>
@@ -119,6 +265,21 @@
                 </section>
                 <section>
                     <h1>Chequeos por verdadero y falso</h1>
+                    <pre>
+                        <code class="js">
+if(user){
+    var isUserPresentInClass = user.isPresent;
+}
+                        </code>
+                    </pre>
+                    <h3>
+                        VS
+                    </h3>
+                    <pre>
+                        <code class="js">
+var isUserPresentInClass = user && user.isPresent
+                        </code>
+                    </pre>
                     <aside class="notes">
                         notas
                     </aside>
@@ -157,10 +318,17 @@
             { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
             { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
             { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/highlightjs-line-numbers/highlightjs-line-numbers.js', async: true, callback: function() { hljs.initLineNumbersOnLoad(); } },
             { src: 'plugin/zoom-js/zoom.js', async: true },
             { src: 'plugin/notes/notes.js', async: true }
         ]
     });
+    
+    $(document).ready(function() {
+        $('code.hljs').each(function(i, block) {
+            hljs.lineNumbersBlock(block);
+        });
+    }); 
 
 </script>
 
