@@ -84,7 +84,7 @@
                     </ul>
                 </section>
                 <section>
-                    <h1>Que es Javascript?</h1>
+                    <h1>¿Qué es Javascript?</h1>
                     <pre>
                         <code class="js">
 var helloWorld = function (){
@@ -103,6 +103,9 @@ helloWorld();
                         - se podria decir que no hay pc que no pueda interpretar JS ya que todas tienen web browsers.<br/>
                         - desde que AJAX se hizo mas comun y mas facil de usar las web apps empezaron a reemplazar apps desktop.<br/>
                         - cada vez mas aplicaciones corren JS en el servidor tambien.<br/>
+                        Ejemplo:<br/>
+                        - agregar un js en un html (inline y con archivo).
+                        - 
                      </aside>
                 </section>
                 <section>
@@ -115,7 +118,7 @@ helloWorld();
                                 </h3>
                                 <pre>
                                     <code class="js">
-var user.isPresent = true;
+user.isPresent = true;
                                     </code>
                                 </pre>
                             </td>
@@ -125,7 +128,7 @@ var user.isPresent = true;
                                 </h3>
                                 <pre>
                                     <code class="js">
-var user.girlfriend = null;
+user.girlfriend = null;
                                     </code>
                                 </pre>
                             </td>
@@ -135,7 +138,7 @@ var user.girlfriend = null;
                                 </h3>
                                 <pre>
                                     <code class="js">
-var user.superPowers;
+user.superPowers;
                                     </code>
                                 </pre>
                             </td>
@@ -148,7 +151,7 @@ var user.superPowers;
                                 </h3>
                                 <pre>
                                     <code class="js">
-var user.age = 21;
+user.age = 21;
                                     </code>
                                 </pre>
                             </td>
@@ -158,19 +161,14 @@ var user.age = 21;
                                 </h3>
                                 <pre>
                                     <code class="js">
-var user.name = 'Bob';
+user.name = 'Bob';
                                     </code>
                                 </pre>
                             </td>
                         </tr>
                     </table>
                     <aside class="notes">
-                        - int
-                        -- 
-                        - string
-                        - array
-                        - bools
-                        - 
+                        - Mostrar como obtener el tipo de algo usando typeof
                     </aside>
                 </section>
                 <section>
@@ -245,9 +243,6 @@ if (typeof x === 'undefined') { // evaluates to true without errors
    // these statements execute
 }
 
-if(x === undefined){ // throws a ReferenceError
-
-}
                         </code>
                     </pre>
                     <aside class="notes">
@@ -258,13 +253,13 @@ if(x === undefined){ // throws a ReferenceError
                     </aside>
                 </section>
                 <section>
-                    <h1>Operadores. && y ||</h1>
+                    <h1>Operadores && y ||</h1>
                     <aside class="notes">
                         notas
                     </aside>
                 </section>
                 <section>
-                    <h1>Chequeos por verdadero y falso</h1>
+                    <h1>Operador &&</h1>
                     <pre>
                         <code class="js">
 if(user){
@@ -281,19 +276,160 @@ var isUserPresentInClass = user && user.isPresent
                         </code>
                     </pre>
                     <aside class="notes">
-                        notas
+                        Mostrar como el operador and no siempre devuelve true o false
+                    </aside>
+                </section>
+                <section>
+                    <h1>Operador ||</h1>
+                    <pre>
+                        <code class="js">
+var value;
+if(userConfigured){
+    value = userConfigured;
+}
+else{
+    value = "default";
+}
+                        </code>
+                    </pre>
+                    <h3>
+                        VS
+                    </h3>
+                    <pre>
+                        <code class="js">
+var value = userConfigured || "default";
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        Empezar con un ejemplo, mostrar como un || no devuelve siempre true o false
+                    </aside>
+                </section>
+                <section>
+                    <h1>Bloques de control</h1>
+                    <pre>
+                    <code class="js">
+if(condition){
+  doSomething();
+}else {
+  doSomethingElse();
+}
+
+for(var i = 0; i < 5; i++)
+
+while(condition){
+  doSomething();
+}
+
+swicht(value){
+  case '': doSomething();
+  case 2: doSomethingElse();
+  break;
+         
+}
+                 </code>
+                    </pre>
+                    <aside class="notes">
+                        Mostrar ejemplo de como las variables declaradas dentro de un bloque de control de flujo son accesibles desde afuera
+                    </aside>
+                </section>
+                <section>
+                    <h1>El objeto global: window || global</h1>
+                    <pre>
+                        <code class="js">
+var a = "algo";
+a === window.a; //true
+
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        Mostrar ejemplo de como todo se setea en objeto window
+                    </aside>
+                </section>
+                 <section>
+                    <h1>Document y Location</h1>
+                    <pre>
+                        <code class="js">
+document.getElementById
+document.getElementsByClassName
+document.createElement
+location.href
+                        </code>
+                    </pre>
+                     <a target="_blank" href="http://www.w3schools.com/jsref/obj_location.asp">Objeto location</a><br/>
+                     <a target="_blank" href="http://www.w3schools.com/jsref/dom_obj_document.asp">Objeto document</a>
+                    <aside class="notes">
+                        BOM y DOM
+                        Ejemplos, encontrar elementos, atachar, etc
                     </aside>
                 </section>
             </section>
-            <section>
-                <h2>slide con codigo</h2>
-                <pre>
-                    <code class="js">
-                        function test(){
-                            var a = 'test';
-                        }
-                    </code>
-                </pre>
+            <section>    
+                <section>
+                    <h2>Clase 2</h2>
+                    <br/>
+                    <ul>
+                        <li>Objetos</li>
+                        <aside class="notes">
+                            -Que es un objeto
+                        </aside>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Declaración y creación de objetos</h1>
+                    <pre>
+                        <code class="js">
+//The most common way
+var object1 = { property: "property", imAFunction: function(){} };
+//Another way, this function will act as the object constructor
+function car(){}
+var object2 = new car();
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        -Crear objetos, declarar propiedades
+                        -Crear objeto usando función como constructor
+                    </aside>
+                </section>
+                <section>
+                    <h1>Métodos en objetos</h1>
+                    <pre>
+                        <code class="js">
+//The most common way
+var car1 = { 
+    make: "ford", 
+    drive: function(){ console.log("driving a " + this.make) } 
+    };
+//Another way, this function will act as the object constructor
+function car(make){
+    this.drive = function(){ console.log("driving a " + make) }
+};
+var car2 = new car("ford");
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        -Funciones y variables públicas y privadas usando notación de función.
+                    </aside>
+                </section>
+                <section>
+                    <h1>Ejercicio reemplazando datos en el DOM</h1>
+                    <pre>
+                        <code class="js">
+//The most common way
+var car1 = { 
+    make: "ford", 
+    drive: function(){ console.log("driving a " + this.make) } 
+    };
+//Another way, this function will act as the object constructor
+function car(make){
+    this.drive = function(){ console.log("driving a " + make) }
+};
+var car2 = new car("ford");
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        -Funciones y variables públicas y privadas usando notación de función.
+                    </aside>
+                </section>
             </section>
         </div>
     </div>
