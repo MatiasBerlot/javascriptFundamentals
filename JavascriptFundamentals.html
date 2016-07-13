@@ -363,7 +363,8 @@ location.href
                     </aside>
                 </section>
             </section>
-            <section>    
+            <section>
+                <!--clase 2 temas-->
                 <section>
                     <h2>Clase 2</h2>
                     <br/>
@@ -374,6 +375,7 @@ location.href
                         </aside>
                     </ul>
                 </section>
+                <!--declaracion y creacion de objetos-->
                 <section>
                     <h1>Declaración y creación de objetos</h1>
                     <pre>
@@ -386,10 +388,50 @@ var object2 = new car();
                         </code>
                     </pre>
                     <aside class="notes">
-                        -Crear objetos, declarar propiedades
-                        -Crear objeto usando función como constructor
+                        - Crear objetos, declarar propiedades<br/>
+                        - Crear objeto usando función como constructor<br/>
+                        - Objetos dinamicos<br/>
+                        - keyValue pair, key string estatico, value lo que sea<br/>
+                        - todo en Js (menos los tipos) son objetos (functiones = objeto con metodo call)<br/>
+                        - 
                     </aside>
                 </section>
+                <section>
+                <h1>Prototype</h1>
+                    <pre>
+                    <code class="js">
+var Persona = function() {
+  this.puedeHablar = true;
+};
+
+Persona.prototype.saludar = function() {
+  if (this.puedeHablar) {
+    console.log('Hola, mi nombre es ' + this.nombre);
+  }
+};
+
+var Empleado = function(nombre, titulo) {
+  Persona.call(this);
+  this.nombre = nombre;
+  this.titulo = titulo;
+};
+
+Empleado.prototype = Object.create(Persona.prototype);
+Empleado.prototype.constructor = Empleado;
+
+Empleado.prototype.saludar = function() {
+  if (this.puedeHablar) {
+    console.log('Hola, yo soy ' + this.nombre + ' el ' + this.titulo);
+  }
+};
+
+var pedro = new Empleado('Pedro', 'Constructor');
+
+pedro.saludar();
+                    </code>
+                    </pre>
+                </section>
+                <!--metodos en objetos-->
                 <section>
                     <h1>Métodos en objetos</h1>
                     <pre>
@@ -410,8 +452,9 @@ var car2 = new car("ford");
                         -Funciones y variables públicas y privadas usando notación de función.
                     </aside>
                 </section>
+                <!--ejercicio reemplazando datos en el DOM-->
                 <section>
-                    <h1>Ejercicio reemplazando datos en el DOM</h1>
+                    <h3>Ejercicio reemplazando datos en el DOM</h3>
                     <pre>
                         <code class="js">
 //The most common way
