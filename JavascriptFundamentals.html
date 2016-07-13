@@ -396,6 +396,40 @@ var object2 = new car();
                         - 
                     </aside>
                 </section>
+                <!--metodos en objetos-->
+                <section>
+                    <h1>Métodos en objetos</h1>
+                    <pre>
+                        <code class="js">
+//The most common way
+var car1 = { 
+    make: "ford", 
+    drive: function(){ console.log("driving a " + this.make) } 
+    };
+//Another way, this function will act as the object constructor
+function car(make){
+    this.drive = function(){ console.log("driving a " + make) }
+};
+var car2 = new car("ford");
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        -Funciones y variables públicas y privadas usando notación de función.
+                    </aside>
+                </section>
+                <!--array notation-->
+                <section>
+                <h1>notacion de array</h1>
+                    <pre>
+                    <code class="js">
+var pedro = new Empleado('Pedro', 'Constructor');
+
+pedro.saludar();
+
+pedro['saludar']();
+                    </code>
+                    </pre>
+                </section>
                 <section>
                 <h1>Prototype</h1>
                     <pre>
@@ -431,28 +465,8 @@ pedro.saludar();
                     </code>
                     </pre>
                 </section>
-                <!--metodos en objetos-->
-                <section>
-                    <h1>Métodos en objetos</h1>
-                    <pre>
-                        <code class="js">
-//The most common way
-var car1 = { 
-    make: "ford", 
-    drive: function(){ console.log("driving a " + this.make) } 
-    };
-//Another way, this function will act as the object constructor
-function car(make){
-    this.drive = function(){ console.log("driving a " + make) }
-};
-var car2 = new car("ford");
-                        </code>
-                    </pre>
-                    <aside class="notes">
-                        -Funciones y variables públicas y privadas usando notación de función.
-                    </aside>
-                </section>
                 <!--ejercicio reemplazando datos en el DOM-->
+<!--
                 <section>
                     <h3>Ejercicio reemplazando datos en el DOM</h3>
                     <pre>
@@ -473,6 +487,7 @@ var car2 = new car("ford");
                         -Funciones y variables públicas y privadas usando notación de función.
                     </aside>
                 </section>
+-->
             </section>
         </div>
     </div>
