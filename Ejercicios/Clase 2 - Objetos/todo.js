@@ -48,7 +48,6 @@ var htmlElementHelper = function () {
         var li = document.createElement('li');
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.innerHTML = itemText;
         //li.textContent = itemText;
         li.appendChild(checkbox);
         
