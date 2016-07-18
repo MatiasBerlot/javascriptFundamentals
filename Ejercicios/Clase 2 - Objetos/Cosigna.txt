@@ -1,0 +1,24 @@
+El resultado final del ejercicio es mostrar en pantalla una lista de tareas a realizar (TODO list),
+donde se puedan agregar y remover items. la principal idea de este ejercicio es que usemos lo que aprendimos de objetos, 
+sientase libre de incluir todas las mejoras que crea conveniente en cada uno de los puntos a continuacion.
+
+PARTE 1
+1- crear un archivo html llamado index.html con un input text con la clase "task-name" y un boton con la clase "add-task" que alerte el contenido de input cada vez que se presione
+2- crear un archivo js llamado todo.js mover la logica del alert a este archivo e incluir el archivo todo.js en index.html (hint: tag <script>)
+3- modificar el archivo html agregando a continuacion del input un div con la clase "todo-list-container".
+4- en el archivo js definir un objeto llamado todoListManager y guardar en variables privadas cada uno de los elementos antes mencionados en el html.
+5- agregar la funcion dentro del todoListManager para que el boton siga alertando el contenido del input.
+6- definir otro objeto llamado htmlElementHelper donde se defina una funcion generica que tome como parametro un string y devuelva un elemento de html que contenga ese string como ID.
+7- modificar el objeto todoListManager para que use el htmlElementHelper para obtener los elementos del html, verificar que se siga alertando el contenido del input.
+8- definir una funcion publica en htmlElementHelper que reciba como parametro un elemento de html y verifique si tiene una lista desordenada(ul) como hija. 
+9- definir una funcion publica en htmlElementHelper que reciba como parametro un elemento de html y le "appendee" una lista desordenada si ya no tiene una como hija.
+10- definir una funcion publica en htmlElementHelper que reciba como parametro un string que es el nombre de la tarea y cree un list item (li) y lo devuelva
+11- modificar el todoListManager para que el evento click del boton agregue un li en el div "todo-list-container" con el texto del input y luego limpiar el texto del input.
+
+PARTE 2
+1- modificar el html del index y agregar un boton para remover tareas con la clase "delete_tasks".
+2- obtener el elemento y guardarlo en una variable privada del todoTaskManager.
+3- como hicimos con el boton de add, le asignamos una funcion al boton de delete tasks.
+4- modificamos el htmlElementHelper para que a cada list item contenga un checkbox el cual vamos a usar para marcar las tareas que queremos borrar.
+5- modificamos el htmlElementHelper para que remueva todos los items que tengan el checkbox marcado.
+6- llamamos desde el evento del boton delete selected tasks en el todoListManager a la funcion que remueve todos los items marcados en el htmlElementHelper.
