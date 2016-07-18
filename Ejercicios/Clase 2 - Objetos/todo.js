@@ -3,7 +3,8 @@ var todoListManager = function (htmlElementHelper) {
     
     var taskNameInput = htmlElementHelper.getHtmlElement('task_name'),
         addTaskButton = htmlElementHelper.getHtmlElement('add_task'),
-        tasklListContainer = htmlElementHelper.getHtmlElement('task_list_container');
+        tasklListContainer = htmlElementHelper.getHtmlElement('task_list_container'),
+        deleteTasksButton = htmlElementHelper.getHtmlElement('delete_tasks');
     
     addTaskButton.onclick = function () {
         if(!htmlElementHelper.hasUListAsChild(tasklListContainer)){
@@ -12,6 +13,10 @@ var todoListManager = function (htmlElementHelper) {
         
         htmlElementHelper.appendLiElement(taskNameInput.value);
     };
+    
+    deleteTasksButton.onclick = function(){
+        htmlElementHelper.removeMarkedTasks();
+    }
 };
     
 var htmlElementHelper = function () {
@@ -41,9 +46,39 @@ var htmlElementHelper = function () {
     
     this.appendLiElement = function(itemText){
         var li = document.createElement('li');
-        li.textContent = itemText;
+        var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.innerHTML = itemText;
+        //li.textContent = itemText;
+        li.appendChild(checkbox);
+        
+        var label = document.createElement('label')
+        label.appendChild(document.createTextNode(itemText));
+
+        li.appendChild(label);
+        
         var list = document.getElementById(listId);
         list.appendChild(li);
+    }
+    
+    this.removeMarkedTasks = function(){
+        var listItems = document.getElementsByTagName('li');
+        var listItemsChecked = [];
+        
+        for(var i = 0; i < listItems.length; i++){
+            var curentItemChildNodes = listItems[i].childNodes;
+            for(var j = 0; j < curentItemChildNodes.length; j++){
+                if(curentItemChildNodes[j].nodeName === 'INPUT'){
+                    if(curentItemChildNodes[j].checked){
+                        listItemsChecked.push(listItems[i]);
+                    }
+                }
+            }
+        }
+        
+        for(var k = 0; k< listItemsChecked.length; k++){
+            listItemsChecked[k].remove();
+        }
     }
 };
 
