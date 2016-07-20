@@ -475,36 +475,147 @@ pedro.saludar();
                     <br/>
                     <ul>
                         <li>Funciones</li>
-                        <aside class="notes">
-                            -Que es un objeto
-                        </aside>
                     </ul>
                 </section>
                 <section>
-                    <!-diferentes sintaxis de funciones-->
-                    <h3>Sintaxis</h3>
+                    <h3>Hoisting</h3>
                     <pre>
                         <code class="js">
-function userModule(){ 
-    var user = {id: 1}, anotherVar = 'stringValue';
-    
-    //logic and other functions
-    var getUserInfo = function(userId){
-        var userInfo = {id: userId, name: 'Bob'};
-        
-        //get the user from the server
-        
-        return userInfo;
-    }
-    
-    var user = getUserInfo(user.id);
-    
-    logUserName(user);
-    
-    function logUserName(user){
-        console.log('user name: ' + user.name);
-    }
+foo();
+
+function foo(){
+	alert("foo being called");
 }
+
+
+try{
+	variableFoo();
+	var variableFoo = function(){ 
+		alert("variableFoo being called") 
+	};
+} 
+catch(error) {
+	alert("Error calling variableFoo");
+}
+                        </code>
+                    </pre>
+                </section>
+				<section>
+                    <h3>Variables scope</h3>
+                    <pre>
+                        <code class="js">
+var a = 6;
+
+function foo(){
+	var a = 5; //Creating own a
+	alert(a);
+}
+
+function foo2(){
+	var b = 7;
+	alert(a); //Priting a from global scope
+	alert(b);
+	a = 8; //Editing a from global scope
+}
+
+//This will print 5
+foo();
+//This will print 6
+alert(a);
+//This will print 6 and then 7
+foo2();
+//This will now print 8
+alert(a);
+                        </code>
+                    </pre>
+                </section>
+				<section>
+                    <h3>Nested functions</h3>
+                    <pre>
+                        <code class="js">
+var a = 5;
+
+function foo(){
+	
+	var b = 6;
+	//I can access b and a
+	alert("calling foo" + a + b);
+	foo1();	
+	
+	function foo1(){
+		
+		var c = 7;
+		//I can access a, b and c
+		alert("calling foo1" + a + b + c);
+		foo2();	
+		
+		
+		function foo2(){
+			var d = 8;
+			//I can access a, b, c and d
+			alert("calling foo2" + a + b + c + d);
+		}
+	}
+}
+
+foo();
+                        </code>
+                    </pre>
+                </section>
+				<section>
+                    <h3>Self invoking functions && closures</h3>
+                    <pre>
+                        <code class="js">
+var alerter = (function(){
+	var a = 5;
+	
+	return function(){
+		alert(a)
+	}
+})();
+
+
+alerter();
+                        </code>
+                    </pre>
+                </section>
+				<section>
+                    <h3>Arguments</h3>
+                    <pre>
+                        <code class="js">
+function foo(){
+	for(var a = 0; a < arguments.length; a++){
+		alert(arguments[a]);
+	}
+}
+
+foo("a", "b", "c");
+
+                        </code>
+                    </pre>
+                </section>
+				<section>
+                    <h3>Apply, call && this</h3>
+                    <pre>
+                        <code class="js">
+function foo(){
+	this[arguments[0]] = arguments[1];
+}
+
+var b = {
+	
+};
+
+foo.call(b, "a", 5);
+alert(b.a);
+
+
+var c = {
+	
+};
+
+foo.apply(c, ["a", 8]);
+alert(c.a);
                         </code>
                     </pre>
                 </section>
