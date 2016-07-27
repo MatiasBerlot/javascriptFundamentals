@@ -1,1 +1,0 @@
-Script que obtiene los valores de un form y los agrega a un objeto usando la notación de llaves

@@ -1,2 +1,0 @@
-Bindear evento click a un elemento del DOM
-Asignar función a variable

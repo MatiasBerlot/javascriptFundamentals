@@ -1,2 +1,0 @@
-Usar el método getOwnPropertyNames para listar las propiedades de un objeto.
-Usar notación de array para obtener los valores de esas propiedades.

@@ -1,2 +1,0 @@
-Creación de un objeto usando funciones
-Acceso a variables públicas y privadas

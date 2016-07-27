@@ -1,3 +1,0 @@
-Uso de parámetros en constructor.
-Creación de elementos HTML con javascript.
-Relaciones entre objetos.
