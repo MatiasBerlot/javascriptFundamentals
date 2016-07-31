@@ -1,0 +1,22 @@
+El resultado final del ejercicio es mostrar en pantalla el resultado de ejecutar la función de fibonacci desarrollada en forma de árbol.
+
+PARTE 1
+1 - Crear un archivo html llamado index.html con un div contenedor con el Id tree container.
+2 - Implementar una función de fibonacci que funcione mediante recursividad.
+3 - Hacer que la función de fibonacci inserte nodos en una lista (en forma de lista - sublista)
+4 - Medir la performance de la función para números grandes (no tan grandes, 14 or so). (performance.now() al inicio - performance.now() al final)
+5 - Mejorar la performance cacheando valores anteriores. Usar un objeto como cache y la notación de array para accederlo. 
+    (Cache[10] para acceder al número de fibonacci de orden 10)
+6 - Mejorar la performance usando document.createDocumentFragment().
+7 - Mejorar la performance cacheando elementos del dom a insertar en la lista final.
+8 - Medir la performance de la función para números grandes nuevamente.
+
+
+Consideraciones:
+
+El valor de cache no debe ser accesible desde fuera de la función de fibonacci.
+El document fragment utilizado no debe ser accesible desde fuera de la función de fibonacci.
+
+Pista:
+
+Utilizar una función self-invoking function para lograrlo.
