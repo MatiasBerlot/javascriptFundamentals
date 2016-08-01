@@ -11,7 +11,7 @@ Implementar herencia de forma simple en javascript.
 10 - Agregar una función a alumno llamada inscribir que agregue al alumno a a la lista en pantalla.
 11 - Agregar una función a profesor llamada dictar que remplace al profesor actual de la lista por el actual.
 12 - Crear un array llamado curso y agregar personas al mismo (profesor y alumnos), luego recorrer el array y llamar inscribir o dictar según corresponda.
-13 - Cómo usarías variables protegidas (Solo accesible para una clase o sus sublcases).
+13 - Cómo usarías variables protegidas? (Solo accesible para una clase o sus sublcases).
 
 Conceptos a utilizar:
 Método call.
