@@ -1,0 +1,12 @@
+Implementación de módulos en javascript de forma simple.
+
+PARTE 1
+1 - Crear una self invoking function 
+
+Consideraciones:
+
+El valor de cache no debe ser accesible desde fuera de la función de fibonacci.
+
+Conceptos a utilizar:
+Self-invoking function.
+Nested functions.

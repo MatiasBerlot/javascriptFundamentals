@@ -1,0 +1,17 @@
+El resultado final del ejercicio es calcular fibonacci y mejorar su performance.
+
+1 - Crear un archivo html llamado index.html con un div contenedor con el Id tree container.
+2 - Implementar una función de fibonacci que funcione mediante recursividad.
+3 - Medir la performance de la función para números grandes (no tan grandes, 14 or so). (performance.now() al inicio - performance.now() al final)
+4 - Mejorar la performance cacheando valores anteriores. Usar un objeto como cache y la notación de array para accederlo. 
+    (Cache[10] para acceder al número de fibonacci de orden 10).
+5 - Medir la performance de la función para números grandes nuevamente.
+
+
+Consideraciones:
+
+El valor de cache no debe ser accesible desde fuera de la función de fibonacci.
+
+Conceptos a utilizar:
+Self-invoking function.
+Nested functions.
