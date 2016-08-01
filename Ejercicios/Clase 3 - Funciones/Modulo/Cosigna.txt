@@ -1,11 +1,17 @@
-Implementación de módulos en javascript de forma simple.
+Implementación muy sencilla de módulos en javascript.
 
 PARTE 1
-1 - Crear una self invoking function 
-
-Consideraciones:
-
-El valor de cache no debe ser accesible desde fuera de la función de fibonacci.
+1 - Crear un archivo llamado personas.js.
+2 - Crear una self invoking function que contenga a las funciones generadores del personas del ejemplo de herencia.
+3 - Hacer que la self invoking function solo exponga a Profesor y Alumno por medio de devolver un objeto que las contenga y guardar su resultado en la variable "personas".
+4 - Incluir el archivo como primer archivo dentro de index.html.
+5 - Crear un archivo main.js.
+6 - Crear una self invoking function que contenga el código que usabamos para generar un curso y mostrarlo en pantall y guardar su resultado en la variable "programa".
+7 - Agregar el módulo personas como dependencia del módulo programa por medio de agregarla como parámetro a la invoación de la misma.
+8 - Crear dentro de el una función llamada generarCurso que solo contenga el bloque "for" que inscribe a alumnos y profesores (tomar las "clases" Persona y Profesor del módulo inyectado).
+9 - Hacer que la self invoking function solo exponga esta función.
+10 - Llamar a la función programa.crearPrograma() y verificar que funcione correctamente.
+11 - Agregar document como dependencia del módulo programa.
 
 Conceptos a utilizar:
 Self-invoking function.

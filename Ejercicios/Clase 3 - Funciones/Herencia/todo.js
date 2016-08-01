@@ -1,31 +1,71 @@
-var inicio = performance.now();
-
-//We create a function that executes itself afterwards
-//and returns another function
-var fibonacci = (function(){
+function Persona(nombre, apellido, dni){
     
-    //This object serves as cache for results
-    //This variable is not accesible from outside the fibonacci function
-    var cache = { "0": 1, "1": 1 };
-
-    //This is the fibonacci function implementation returned by the self invoked function
-    return function(n){
-        
-        //If the result is into the cache do not calculate it, return it directly
-        if(cache[n] || cache[n] === 0){
-            return cache[n]; 
-        }
-        
-        //If the result is not witihn the cache, calculate it and assign it to the cache
-        //The = operator assigns a value to a variable and then returns that value (alert(a = "a") shows "a" into a dialog)
-        return (cache[n] = fibonacci(n-1) + fibonacci(n-2));
+    var self = this;
+    
+    self.obtenerNombre = obtenerNombre;
+    
+    function obtenerNombre(){
+        return apellido + ", " + nombre;
     }
     
-})(); //Here we are executing the self invoked function, do not forget the semicolons (;)
+    Object.defineProperty(self, 'profesion', {
+        configurable: true,
+        get: function(){
+            return "no definida"
+        }
+    });
+    
+}
 
-var result = fibonacci(200);
-var final =  performance.now();
+function Profesor(nombre, apellido, dni, headerProfesor){
+    var self = this;
+    Persona.call(self, nombre, apellido, dni);
+    
+    Object.defineProperty(self, 'profesion', {
+        configurable: true,
+        get: function(){
+            return "profesor"
+        }
+    });
+    
+    self.dictar = dictar;
+    
+    function dictar(){
+        headerProfesor.innerHTML = self.obtenerNombre() + " " + dni;
+    }
+}
 
-alert(result);
-//Time in miliseconds
-alert(final - inicio);
+function Alumno(nombre, apellido, dni, listaAlumnos){
+    var self = this;
+    Persona.call(self, nombre, apellido, dni);
+    
+    Object.defineProperty(self, 'profesion', {
+        configurable: true,
+        get: function(){
+            return "alumno"
+        }
+    });
+    
+    self.inscribir = inscribir;
+    
+    function inscribir(){
+        var alumno = document.createElement("li");
+        alumno.innerHTML = self.obtenerNombre() + " " + dni;
+        listaAlumnos.appendChild(alumno);
+    }
+}
+
+var headerProfesor = document.getElementById("profesor");
+var listaAlumnos = document.getElementById("alumnos");
+
+var curso = [
+    new Profesor("Juan", "Perez", 27111333, headerProfesor),
+    new Alumno("Roberto", "Gonzales", 47111333, listaAlumnos),
+    new Alumno("Mas", "Alguien", 25411333, listaAlumnos),
+    new Alumno("Soy", "Otro", 31211333, listaAlumnos),
+    new Alumno("Matias", "Berlot", 33311333, listaAlumnos)
+];
+
+for (var index = 0; index < curso.length; index++) {
+    curso[index].profesion == "profesor" ? curso[index].dictar() : curso[index].inscribir();
+}
