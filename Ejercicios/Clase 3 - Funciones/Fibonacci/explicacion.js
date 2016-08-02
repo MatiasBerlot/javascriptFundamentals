@@ -98,7 +98,8 @@ alert("Nuestro primer calculo dio como resultado " + fibonacciConCache40 + " el 
 
 
 /*
-Para solucionar esto podemos utilizat una self invoking function. Su proposito es encapsular el contenido que queremos ocultar, la sintaxis es la siguiente:
+Para solucionar esto podemos utilizat una self invoking function. Su proposito es encapsular el contenido que queremos ocultar, 
+la sintaxis es la siguiente:
 */
 
 var resultadoSelfInvoking = (function(){
