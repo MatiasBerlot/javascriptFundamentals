@@ -1,17 +1,17 @@
 Implementar herencia de forma simple en javascript.
 
-1 - Crear una función constructora de objetos Persona con las propiedades privadas nombre, apellido y DNI que recibe como parámetros en su creación.
-2 - Agregar al objeto persona el método obtenerNombre() que devuelva el string ¨apellido, nombre¨.
-3 - Agregar una propiedad tipo getter de nombre profesión a persona que devuelva "no definida".
-5 - Agregar una función constructora de objetos Profesor que herede de personas. (Usar Persona.call(this, 'parametros del constructor'))
-6 - Sobreescribir la propiedad profesión para que devuelva el string "profesor".
-7 - Agregar una función constructora de objetos Alumno que herede de personas. (Usar Persona.call(this, 'parametros del constructor'))
-8 - Sobreescribir la propiedad profesión para que devuelva el string "alumno".
+1 - Crear una funciÃ³n constructora de objetos Persona con las propiedades privadas nombre, apellido y DNI que recibe como parÃ¡metros en su creaciÃ³n.
+2 - Agregar al objeto persona el mÃ©todo obtenerNombre() que devuelva el string Â¨apellido, nombreÂ¨.
+3 - Agregar una propiedad tipo getter de nombre profesiÃ³n a persona que devuelva "no definida". (Usar Object.defineProperty(this, nombre, configuracion))
+5 - Agregar una funciÃ³n constructora de objetos Profesor que herede de personas. (Usar Persona.call(this, 'parametros del constructor'))
+6 - Sobreescribir la propiedad profesiÃ³n para que devuelva el string "profesor".
+7 - Agregar una funciÃ³n constructora de objetos Alumno que herede de personas. (Usar Persona.call(this, 'parametros del constructor'))
+8 - Sobreescribir la propiedad profesiÃ³n para que devuelva el string "alumno".
 9 - Agregar un elemento en pantalla que tenga como header al profesor de un curso y una lista de alumnos.
-10 - Agregar una función a alumno llamada inscribir que agregue al alumno a a la lista en pantalla.
-11 - Agregar una función a profesor llamada dictar que remplace al profesor actual de la lista por el actual.
-12 - Crear un array llamado curso y agregar personas al mismo (profesor y alumnos), luego recorrer el array y llamar inscribir o dictar según corresponda.
-13 - Cómo usarías variables protegidas (Solo accesible para una clase o sus sublcases).
+10 - Agregar una funciÃ³n a alumno llamada inscribir que agregue al alumno a a la lista en pantalla.
+11 - Agregar una funciÃ³n a profesor llamada dictar que remplace al profesor actual de la lista por el actual.
+12 - Crear un array llamado curso y agregar personas al mismo (profesor y alumnos), luego recorrer el array y llamar inscribir o dictar segÃºn corresponda.
+13 - CÃ³mo usarÃ­as variables protegidas? (Solo accesible para una clase o sus sublcases).
 
 Conceptos a utilizar:
-Método call.
+MÃ©todo call.
