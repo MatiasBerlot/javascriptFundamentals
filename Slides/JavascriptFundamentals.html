@@ -620,6 +620,88 @@ alert(c.a);
                     </pre>
                 </section>
             </section>
+            <section>
+                <section>
+                    <h2>
+                        Tema 4
+                    </h2>
+                    <br/>
+                    <ul>
+                        <li>jQuery</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>$ || jQuery</h3>
+                    <pre>
+                        <code class="js">
+alert($ == jQuery) //true
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Selectores</h3>
+                    <pre>
+                        <code class="js">
+$("#selectById"); //Que tenga el id selectById
+$(".clase"); //Que tengan una clase
+${"[atributo="algo"]"); //Que tengan un atributo
+${".clase:hover"); //Que tengan una clase y que tengan el mouse arriba
+${"ul"); //Todos los ul
+${"ul li"); //Todos los li dentro de un ul (hijos directos o no)
+${"ul li>.clase"); //Los hijos los li dentro de un ul que tengan la clase "clase"
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Eventos</h3>
+                    <pre>
+                        <code class="js">
+$("#selectById").click(); //Trigger del evento click
+$(".clase").click(); //Trigger del evento click en todos los elementos
+
+$("#selectById").click(function(){}); //Bind del evento click
+$(".clase").click(function(){}); //Bind del evento click en todos los elementos
+
+$("#selectById").click(function(){}); //Los eventos se acumulan, no se reemplazan
+$("#selectById").on("click", function(){}); //Lo mismo pero podemos agregar namespaces
+$("#selectById").on("click.algo", function(){}); //Con namespace
+
+$("#selectById").on("click change", function(){}); //Bindea tanto click como change
+
+
+$("#selectById").trigger("click.algo"); //Llama solo a click.algo
+
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Manage HTML</h3>
+                    <pre>
+                        <code class="js">
+$("#selectById").append("<div></div>");
+$("<div><div></div></div>");
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Ajax</h3>
+                    <pre>
+                        <code class="js">
+jQuery.ajax( url [, settings ] ); //post, get, put, delete
+jQuery.ajax( [settings ] ); //post, get, put, delete
+
+
+
+$.ajax("https://code.jquery.com/jquery-3.1.0.js").then(
+    function(response){
+    alert(response);
+}) //ESTO ES ASINCRONO, VAMOS A LOS EJEMPLOS
+
+
+                        </code>
+                    </pre>
+                </section>
+            </section>
         </div>
     </div>
 
