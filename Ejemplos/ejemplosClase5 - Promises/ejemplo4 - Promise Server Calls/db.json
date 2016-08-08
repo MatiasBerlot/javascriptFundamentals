@@ -1,0 +1,352 @@
+{
+   "index_searched" : "title",
+   "current_page" : 1,
+   "page_count" : 10302,
+   "result_count" : 103019,
+   "data" : [
+      {
+         "book_id" : "science_c28",
+         "awards_text" : "",
+         "isbn13" : "9780816081530",
+         "subject_ids" : [
+            "business_investing_job_hunting_careers_guides",
+            "reference_general",
+            "science_general_aaaa0",
+            "electronic_books"
+         ],
+         "edition_info" : "(electronic bk.)",
+         "dewey_decimal" : "",
+         "lcc_number" : "",
+         "title" : "Science",
+         "isbn10" : "0816081530",
+         "marc_enc_level" : "2",
+         "dewey_normal" : "0",
+         "notes" : "Description based upon print version of record.\n\nCover; Contents; Introduction; Biochemists; Biologists; Botanists; Chemists; Climatologists; Ecologists; Environmental Scientists; Geologists; Geophysicists; Marine Biologists; Meteorologists; Oceanographers; Soil Scientists; Wetland Scientists; Wildlife Scientists; Further Reading; Index;\n\nAccess restricted to subscribing institutions. Individual titles purchased upon selection by an affiliated user.",
+         "publisher_name" : "Infobase Publishing",
+         "publisher_id" : "infobase_publishing",
+         "language" : "eng",
+         "title_latin" : "Science",
+         "title_long" : "",
+         "author_data" : [
+            {
+               "name" : "Pamela Fehl",
+               "id" : "pamela_fehl"
+            }
+         ],
+         "summary" : "",
+         "physical_description_text" : "1 online resource (169 p.)",
+         "publisher_text" : "New York : Infobase Publishing, 2010.",
+         "urls_text" : "Access online: Individual login with EBL required http://0-www.du.eblib.com.bianca.penlib.du.edu/EBLWeb/patron/?target=patron&extendedid=P_540037_0"
+      },
+      {
+         "edition_info" : "",
+         "isbn10" : "0439017092",
+         "title" : "Science",
+         "lcc_number" : "",
+         "dewey_decimal" : "372.35044",
+         "notes" : "",
+         "dewey_normal" : "372.35044",
+         "marc_enc_level" : "8",
+         "awards_text" : "",
+         "book_id" : "science_b80",
+         "isbn13" : "9780439017091",
+         "subject_ids" : [
+            "science_study_and_teaching_preschool",
+            "science_study_and_teaching_elementary"
+         ],
+         "title_long" : "",
+         "physical_description_text" : "96 p. : ill. ; 30 cm.",
+         "summary" : "",
+         "author_data" : [
+            {
+               "name" : "Tavener, Jenni",
+               "id" : "tavener_jenni"
+            }
+         ],
+         "publisher_text" : "Leamington Spa : Scholastic, 1999.",
+         "urls_text" : "",
+         "publisher_id" : "scholastic",
+         "publisher_name" : "Scholastic",
+         "language" : "eng",
+         "title_latin" : "Science"
+      },
+      {
+         "publisher_id" : "harcourt_school",
+         "publisher_name" : "Harcourt School",
+         "title_latin" : "Science",
+         "language" : "",
+         "title_long" : "",
+         "summary" : "",
+         "physical_description_text" : "8.7\"x11.0\"x1.1\"; 2.5 lb",
+         "author_data" : [],
+         "publisher_text" : "Harcourt School",
+         "urls_text" : "",
+         "book_id" : "science_b79",
+         "awards_text" : "",
+         "isbn13" : "9780153176494",
+         "subject_ids" : [
+            "childrens_books_ages_4_8_general",
+            "childrens_books_ages_4_8_general_aas",
+            "childrens_books_science_nature_how_it_works_general",
+            "childrens_books_science_nature_how_it_works_general_aas"
+         ],
+         "edition_info" : "Hardcover; 2000-01",
+         "isbn10" : "0153176490",
+         "title" : "Science",
+         "lcc_number" : "",
+         "dewey_decimal" : "500",
+         "notes" : "",
+         "marc_enc_level" : "~",
+         "dewey_normal" : "500"
+      },
+      {
+         "dewey_decimal" : "",
+         "title" : "Science",
+         "isbn10" : "0022870407",
+         "lcc_number" : "",
+         "edition_info" : "Hardcover; 2009",
+         "marc_enc_level" : "~",
+         "dewey_normal" : "0",
+         "notes" : "",
+         "awards_text" : "",
+         "book_id" : "science_c26",
+         "subject_ids" : [],
+         "isbn13" : "9780022870409",
+         "author_data" : [],
+         "summary" : "Ga.. A closer look science",
+         "physical_description_text" : "",
+         "title_long" : "",
+         "urls_text" : "",
+         "publisher_text" : "McGRaw hill",
+         "publisher_name" : "McGRaw hill",
+         "publisher_id" : "mcgraw_hill_a01",
+         "language" : "",
+         "title_latin" : "Science"
+      },
+      {
+         "dewey_decimal" : "",
+         "lcc_number" : "",
+         "title" : "Science",
+         "isbn10" : "8131906809",
+         "edition_info" : "Paperback; 2009-04-29",
+         "dewey_normal" : "0",
+         "marc_enc_level" : "~",
+         "notes" : "",
+         "awards_text" : "",
+         "book_id" : "science_c25",
+         "subject_ids" : [
+            "childrens_books_reference_nonfiction_general",
+            "childrens_books_science_nature_how_it_works_math_general",
+            "childrens_books_science_nature_how_it_works_general"
+         ],
+         "isbn13" : "9788131906804",
+         "author_data" : [
+            {
+               "name" : "Pawanpreet Kaur",
+               "id" : "pawanpreet_kaur"
+            }
+         ],
+         "summary" : "This title is suitable for ages 8 to 10 years. This series offers a comprehensive approach to give young readers precise information in a pictorial format for better understanding. The books in this series carry various eye-opening exciting facts with bold illustrations and photography which will enhance the child's technical knowledge for a particular subject. Not only that, there are more pictures other than those in relation to the text which give additional facts. The series presents a source of accurate information in a beautiful way.",
+         "physical_description_text" : "8.3\"x10.8\"x0.2\"; 0.3 lb; 32 pages",
+         "title_long" : "",
+         "urls_text" : "",
+         "publisher_text" : "B Jain Publishers Pvt Ltd",
+         "publisher_name" : "B Jain Publishers Pvt Ltd",
+         "publisher_id" : "b_jain_publishers_pvt_ltd_a01",
+         "language" : "",
+         "title_latin" : "Science"
+      },
+      {
+         "publisher_id" : "scholastic",
+         "publisher_name" : "Scholastic",
+         "title_latin" : "Science",
+         "language" : "eng",
+         "summary" : "",
+         "physical_description_text" : "80 p. : ill. ; 30 cm. + 1 CD-ROM",
+         "author_data" : [
+            {
+               "name" : "Creary, Carole",
+               "id" : "creary_carole"
+            },
+            {
+               "name" : "Wilson, Gay",
+               "id" : "wilson_gay"
+            },
+            {
+               "name" : "Burrows, Ray",
+               "id" : "burrows_ray"
+            },
+            {
+               "id" : "burrows_corinne",
+               "name" : "Burrows, Corinne"
+            }
+         ],
+         "title_long" : "",
+         "urls_text" : "",
+         "publisher_text" : "Leamington Spa : Scholastic, 2004.",
+         "book_id" : "science_c08",
+         "awards_text" : "",
+         "subject_ids" : [
+            "science_study_and_teaching_elementary_great_britain"
+         ],
+         "isbn13" : "9789999114998",
+         "lcc_number" : "",
+         "title" : "Science",
+         "isbn10" : "9999114997",
+         "dewey_decimal" : "372.350440941",
+         "edition_info" : "(cd)",
+         "notes" : "Includes CD-ROM.\n\nLiving things -- sorting and using materials -- light and dark -- pushes and pulls -- sound and hearing.",
+         "dewey_normal" : "372.350440941",
+         "marc_enc_level" : "8"
+      },
+      {
+         "publisher_name" : "Scholastic",
+         "publisher_id" : "scholastic",
+         "language" : "eng",
+         "title_latin" : "Science",
+         "title_long" : "",
+         "author_data" : [
+            {
+               "name" : "Creary, Carole",
+               "id" : "creary_carole"
+            },
+            {
+               "id" : "wilson_gay",
+               "name" : "Wilson, Gay"
+            },
+            {
+               "id" : "curl_beverly_a",
+               "name" : "Curl, Beverly A."
+            }
+         ],
+         "physical_description_text" : "80 p. : ill. ; 30 cm. + 1 CD-ROM.",
+         "summary" : "",
+         "publisher_text" : "Leamington Spa : Scholastic, 2004.",
+         "urls_text" : "",
+         "awards_text" : "",
+         "book_id" : "science_c09",
+         "isbn13" : "9789999115001",
+         "subject_ids" : [
+            "science_study_and_teaching_elementary_great_britain"
+         ],
+         "edition_info" : "(cd)",
+         "dewey_decimal" : "372.350440941",
+         "title" : "Science",
+         "isbn10" : "9999115004",
+         "lcc_number" : "",
+         "dewey_normal" : "372.350440941",
+         "marc_enc_level" : "8",
+         "notes" : "Includes CD-ROM.\n\nHealth and growing -- plants and animals in the local environment -- variation -- grouping and changing materials -- forces and movement -- using electricity."
+      },
+      {
+         "author_data" : [
+            {
+               "id" : "creary_carole",
+               "name" : "Creary, Carole"
+            },
+            {
+               "name" : "Wilson, Gay",
+               "id" : "wilson_gay"
+            },
+            {
+               "name" : "Alexander, Sally J.",
+               "id" : "alexander_sally_j"
+            },
+            {
+               "id" : "andy_miles",
+               "name" : "Andy Miles"
+            }
+         ],
+         "summary" : "",
+         "physical_description_text" : "80 p. : ill. ; 80 cm. + 1 CD-ROM.",
+         "title_long" : "",
+         "urls_text" : "",
+         "publisher_text" : "Leamington Spa : Scholastic, 2004.",
+         "publisher_name" : "Scholastic",
+         "publisher_id" : "scholastic",
+         "title_latin" : "Science",
+         "language" : "eng",
+         "dewey_decimal" : "372.350440941",
+         "title" : "Science",
+         "isbn10" : "9999115012",
+         "lcc_number" : "",
+         "edition_info" : "(cd)",
+         "dewey_normal" : "372.350440941",
+         "marc_enc_level" : "8",
+         "notes" : "Includes CD-ROM.\n\nTeeth and eating -- helping plants grow well -- materials -- rocks and soils -- light and shadows.",
+         "book_id" : "science_c10",
+         "awards_text" : "",
+         "subject_ids" : [
+            "science_study_and_teaching_elementary_great_britain"
+         ],
+         "isbn13" : "9789999115018"
+      },
+      {
+         "subject_ids" : [
+            "science_study_and_teaching_elementary_great_britain"
+         ],
+         "isbn13" : "9789999115049",
+         "awards_text" : "",
+         "book_id" : "science_c11",
+         "notes" : "Includes CD-ROM.\n\nInterdependence and adaptation -- micro-organisms -- more about dissolving -- reversible and irreversible changes -- forces in action -- how we see things -- changing circuits.",
+         "marc_enc_level" : "4",
+         "dewey_normal" : "372.350440941",
+         "isbn10" : "9999115047",
+         "title" : "Science",
+         "lcc_number" : "",
+         "dewey_decimal" : "372.350440941",
+         "edition_info" : "(cd)",
+         "title_latin" : "Science",
+         "language" : "eng",
+         "publisher_id" : "scholastic",
+         "publisher_name" : "Scholastic",
+         "urls_text" : "",
+         "publisher_text" : "London : Scholastic, 2004.",
+         "physical_description_text" : "80 p. : ill. ; 30 cm. + 1 CD-ROM",
+         "summary" : "",
+         "author_data" : [
+            {
+               "name" : "Creary, Carole",
+               "id" : "creary_carole"
+            },
+            {
+               "id" : "wilson_gay",
+               "name" : "Wilson, Gay"
+            }
+         ],
+         "title_long" : ""
+      },
+      {
+         "publisher_id" : "john_wiley_sons_inc_a02",
+         "publisher_name" : "John Wiley & Sons Inc",
+         "language" : "",
+         "title_latin" : "Sciences",
+         "physical_description_text" : "",
+         "summary" : "",
+         "author_data" : [
+            {
+               "id" : "trefil_james_s",
+               "name" : "Trefil, James S."
+            }
+         ],
+         "title_long" : "",
+         "urls_text" : "",
+         "publisher_text" : "John Wiley & Sons Inc",
+         "book_id" : "sciences_a04",
+         "awards_text" : "",
+         "subject_ids" : [
+            "science_history_philosophy_general",
+            "science_general_aaaa0"
+         ],
+         "isbn13" : "9780471756934",
+         "isbn10" : "0471756938",
+         "title" : "Sciences",
+         "lcc_number" : "",
+         "dewey_decimal" : "",
+         "edition_info" : "Paperback; 2005-12-27",
+         "notes" : "",
+         "marc_enc_level" : "~",
+         "dewey_normal" : "0"
+      }
+   ]
+}
