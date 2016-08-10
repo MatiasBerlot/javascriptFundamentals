@@ -1,0 +1,44 @@
+Incluir en todos los ejercicios lo siguiente para simular una llamada al servidor:
+
+$.ajax = function(url, options){
+    var deferred = $.Deferred();
+    
+    if(url === "/myNumbers1"){
+	setTimeout(function(){
+		deferred.resolve([1,2,3]);
+	}, 3000);	
+    } else if(url === "/myNumbers2"){
+	setTimeout(function(){
+		deferred.resolve([3,4,5]);
+	}, 3000);	
+    } else if(url === "/myNumbers3"){
+	setTimeout(function(){
+		deferred.reject("There was an error");
+	}, 3000);	
+    }
+    
+    return deferred.promise();
+}
+
+Convertir los siguientes secuencias de acciones en cadenas de promises:
+
+Ejercicio 1
+
+1 - Llamar al endpoint "/myNumbers1" y a continuación a "/myNumbers1", luego sumar los resultados 1 a 1 de cada lista y 
+finalmente mostrar los resultados en pantalla. ([1,2,3] + [3,4,5] = [4,6,8]) Verificar el tiempo transcurrido entre el inicio
+y el final.
+2 - Realizar el mismo ejercicio pero realizando las llamadas a los endpoint en paralelo. Verificar el tiempo transcurrido entre el inicio
+y el final.
+3 - Realizar el ejercicio 1 pero incluir en la secuencia de acciones al endpoint "/myNumbers3". Capturar el error como paso final y mostrarlo.
+4 - Realizar lo mismo en paralelo.
+5 - Generar el siguiente esquema de promesas:
+
+
+"/myNumbers1"    "/myNumbers3"
+      |                |
+"/myNumbers2"    "alert error"
+      |________________|            
+		      |
+ "alert resultados ambas ramas"
+              |	
+	    "alert finally"

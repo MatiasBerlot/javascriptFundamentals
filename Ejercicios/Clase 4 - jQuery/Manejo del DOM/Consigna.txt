@@ -1,0 +1,14 @@
+1 - Ingresar en la lista "equipos senior" una lista con los nombres de todos los equipos que tienen un desarrollador senior.
+2 - Ingresar en la lista "equipos junior" una lista con los nombres de todos los equipos que tienen un desarrollador junior.
+3 - Ingresar en la lista "desarrolladores senior empleados" una lista de todos los empleados que sean senior que sean empleados.
+4 - Agregar un boton a cada desarrollador que tenga el texto "likes" y un contador con el texto "Likes:".
+
+Estructura:
+
+<div>
+	<div>Likes: <numero></div>
+	<button class="like-button">Like!</button>
+</div>
+
+
+5 - Agregar un evento on click a cada boton para que al ser clickeado aumente el contador de likes.
