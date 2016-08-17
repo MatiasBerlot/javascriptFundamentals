@@ -823,11 +823,14 @@ var userId = 0,
                 <section>
                     <h3>Usar siempre === y !===</h3>
                     <pre>
-                        <h4>RECOMENDADO</h4>
                         <code class="js">
 1 == '1' //true - no usar
 false == 0 //true - no usar
 false == "" //true - no usar
+
+1 === '1' //false - usar
+false === 0 //false - usar
+false === "" //false - usar
                         </code>
                     </pre>
                     <aside class="notes">
