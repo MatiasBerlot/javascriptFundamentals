@@ -702,6 +702,124 @@ $.ajax("https://code.jquery.com/jquery-3.1.0.js").then(
                     </pre>
                 </section>
             </section>
+            <section>
+                <section>
+                    <h2>
+                        Buenas Practicas
+                    </h2>
+                </section>
+                <section>
+                    <h3>Nunca usar variables globales</h3>
+                    <pre>
+                        <h4>PROHIBIDO</h4>
+                        <code class="js">
+var a = 5;//puede ser modificado por cualquier otro script que se cargue despues que este
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Nunca usar variables globales</h3>
+                    <pre>
+                        <h4>RECOMENDADO</h4>
+                        <code class="js">
+(function(){
+    var a = 5;
+})(); //solo puede ser modificado dentro de este closure
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Nunca usar variables globales</h3>
+                    <pre>
+                        <h4>PROHIBIDO</h4>
+                        <code class="js">
+(function(){
+    a = 5;
+})(); //como la variable no tiene var se define a nivel global
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Nunca usar variables globales</h3>
+                    <pre>
+                        <h4>RECOMENDADO</h4>
+                        <code class="js">
+(function(){
+    'use strict';
+     var a = 5;
+})(); //strict mode nos obliga a declarar la variable local por que sino obtenemos un error al usar una variable no declarada
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        - 'use strict'; es solo reconocido al inicio del bloque<br/>
+                        - <br/>
+                        - <br/>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Declarar las variables al principio de cada bloque</h3>
+                    <pre>
+                        <h4>PROHIBIDO</h4>
+                        <code class="js">
+var a = 8;
+
+sumaAMasB();
+
+function sumaAMasB(){
+    console.log(a + b);
+}
+
+var b = 2;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Declarar las variables al principio de cada bloque</h3>
+                    <pre>
+                        <h4>RECOMENDADO</h4>
+                        <code class="js">
+var a = 8, b = 2;
+
+function sumaAMasB(){
+    console.log(a + b);
+}
+
+sumaAMasB();
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        - obtenemos un codigo mas limpio<br/>
+                        - vemos todas las variables en un solo lugar<br/>
+                        - facilita evitar variables globales y posibles duplicados que se pisen los valores<br/>
+                    </aside>
+                </section>
+            <section>
+                <h3>Inicializar las variables y usar nombres descriptivos</h3>
+                <pre>
+                        <h4>PROHIBIDO</h4>
+                        <code class="js">
+var uId,
+    uAddMain,
+    uPerMob;
+                        </code>
+                    </pre>
+            </section>
+                <section>
+                    <h3>Inicializar las variables y usar nombres descriptivos</h3>
+                    <pre>
+                        <h4>RECOMENDADO</h4>
+                        <code class="js">
+var userId = 0,
+    userAddressMain = 'not provided',
+    userPersonalMobile = '555-555';
+                        </code>
+                    </pre>
+                    <aside class="notes">
+                        - el nombre y el valor de inicializacion nos proveen una idea de para que se usa la variable (y el tipo)<br/>
+                        - <br/>
+                        - <br/>
+                    </aside>
+                </section>
         </div>
     </div>
 
