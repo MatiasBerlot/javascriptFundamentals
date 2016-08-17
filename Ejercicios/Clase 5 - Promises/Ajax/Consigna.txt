@@ -24,7 +24,7 @@ Convertir los siguientes secuencias de acciones en cadenas de promises:
 
 Ejercicio 1
 
-1 - Llamar al endpoint "/myNumbers1" y a continuación a "/myNumbers1", luego sumar los resultados 1 a 1 de cada lista y 
+1 - Llamar al endpoint "/myNumbers1" y a continuaciï¿½n a "/myNumbers1", luego sumar los resultados 1 a 1 de cada lista y 
 finalmente mostrar los resultados en pantalla. ([1,2,3] + [3,4,5] = [4,6,8]) Verificar el tiempo transcurrido entre el inicio
 y el final.
 2 - Realizar el mismo ejercicio pero realizando las llamadas a los endpoint en paralelo. Verificar el tiempo transcurrido entre el inicio
@@ -34,10 +34,10 @@ y el final.
 5 - Generar el siguiente esquema de promesas:
 
 
-"/myNumbers1"    "/myNumbers3"
-      |                |
-"/myNumbers2"    "alert error"
-      |________________|            
+"/myNumbers1" "/myNumbers2"    myNumbers3"
+  |                 |                |
+  |                 |            alert error"
+  |_________________|________________|            
 		      |
  "alert resultados ambas ramas"
               |	
