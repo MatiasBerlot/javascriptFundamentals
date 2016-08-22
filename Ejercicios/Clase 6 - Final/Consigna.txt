@@ -9,8 +9,8 @@ ademas del correcto funcionamiento de la aplicacion, se pide tener en cuenta una
 
 2- crear pagina de Alta de usuarios, con los campos nombre, apellido, email, telefono.
    a - modificar el boton "Nuevo Contacto" del punto 1 para redireccionar a esta pagina.
-   b - en la pagina de alta de contacto agregar un boton para crear en nuevo contacto.
-   c - mostrar un mensaje de "Creating Contact, please wait..." mientras se lleva a cabo la creacion del usuario.
+   b - en la pagina de alta de contacto agregar un boton para crear en nuevo contacto y otro para cancelar la accion que vuelva a la lista.
+   c - mostrar un mensaje de "Creando Usuario, por favor espere..." mientras se lleva a cabo la creacion del usuario.
    d - si la creacion es satisfactoria mostrar un alert al usuario informado esto y cuando el usuario acepte el mensaje redireccionar.
    e - si falla la creacion mostrar un mensaje al usuario informando el error y dar la opcion de reintentar o de volver al listado de usuarios.
 
@@ -19,3 +19,9 @@ ademas del correcto funcionamiento de la aplicacion, se pide tener en cuenta una
    b - agregar un boton "borrar selccionados" y en cada fila agregar un checkbox donde se marquen los usuarios a borrar, mostrar mensaje del resultado de 
        esta operacion una vez borrados todos los contactos.
    c - refrescar la grilla una vez que algun contacto sea borrado.
+
+4- modificar la lista de contactos y agregar un boton por fila para editar la informacion
+   a - el boton de edicion va a redireccionar a la pantalla de alta de usuario pasando por querystring el id del usuario a editar.
+   b - una vez en la pagina si en el query string existe el parametro Id en lugar de mostrar el boton de Crear mostrar el boton de Guardar Cambios.
+   c - cargar los campos con la informacion del usuario correspondiente para poder modificarlos.
+   d - como hicimos en la alta, mostramos una vez finalizada una operacion un mensaje con el resultado.
