@@ -1,4 +1,4 @@
-(function (localStorage, $, setTimeout, Promise) {
+(function (localStorage, $, setTimeout, Promise, JSON, Math, Number, Object) {
     $.ajax = function (url, options) {
 
         if (url.indexOf("/contacts") == 0) {
@@ -144,4 +144,4 @@
         return simulateServerCall(true);
     }
 
-} (localStorage, $, setTimeout, Promise));
+} (localStorage, $, setTimeout, Promise, JSON, Math, Number, Object));
