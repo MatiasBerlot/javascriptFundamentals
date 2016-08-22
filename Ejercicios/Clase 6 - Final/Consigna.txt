@@ -1,0 +1,21 @@
+El ejercicio va a consistir en un ABM (alta - baja - modificacion) de contactos usando como backend server.js 
+usando los conceptos expuestos en las clases como modulos, promises, buenas practicas, jQuery, etc...
+ademas del correcto funcionamiento de la aplicacion, se pide tener en cuenta una buena identacion del codigo e informar al usuario del resultado de sus operaciones.
+
+1- crear pagina del listado de usuarios
+  a - consultar esta informacion al servidor con el verbo GET cuando se carga la pantalla ($( document ).ready()), mostrar los resultado en una grilla, 
+      en caso de no existir usuarios mostrar mensaje informando esto al usuario.
+  b - agegar un boton "Nuevo Contacto" que redirija a google.com usando una funcion en el evento onclick.
+
+2- crear pagina de Alta de usuarios, con los campos nombre, apellido, email, telefono.
+   a - modificar el boton "Nuevo Contacto" del punto 1 para redireccionar a esta pagina.
+   b - en la pagina de alta de contacto agregar un boton para crear en nuevo contacto.
+   c - mostrar un mensaje de "Creating Contact, please wait..." mientras se lleva a cabo la creacion del usuario.
+   d - si la creacion es satisfactoria mostrar un alert al usuario informado esto y cuando el usuario acepte el mensaje redireccionar.
+   e - si falla la creacion mostrar un mensaje al usuario informando el error y dar la opcion de reintentar o de volver al listado de usuarios.
+
+3- modificar la lista de contactos y agregar un boton por fila para borrar
+   a - mostrar mensaje de confirmacion de borrado de contacto donde el usuario vea la informacion del contacto que esta por borrar
+   b - agregar un boton "borrar selccionados" y en cada fila agregar un checkbox donde se marquen los usuarios a borrar, mostrar mensaje del resultado de 
+       esta operacion una vez borrados todos los contactos.
+   c - refrescar la grilla una vez que algun contacto sea borrado.
